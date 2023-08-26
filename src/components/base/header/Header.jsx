@@ -1,14 +1,14 @@
 import React from 'react';
 import HeaderLogo from './HeaderLogo';
 import HeaderText from './HeaderText';
-import PrimaryButton from '../../buttons/PrimaryButton';
+import ModalButton from '../../buttons/ModalButton';
 const Header = ({openSidebar}) => {
     return (
         <div className='flex flex-row text-center bg-secondary'>
             <HeaderLogo openSidebar={openSidebar}/>
             <HeaderText/>
             <div className='grow my-auto text-right pe-4'>
-                <PrimaryButton name={"Add Task"} size={"text-lg"}/>
+                <ModalButton name={"Add Task"} size={"text-base"} color={"bg-primary"} targetID={"AddTaskForm"}/>
             </div>
         </div>
     );

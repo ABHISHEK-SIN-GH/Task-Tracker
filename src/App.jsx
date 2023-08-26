@@ -9,16 +9,32 @@ import TimeTable from './components/management/TimeTable';
 import Calender from './components/management/Calender';
 import KeepNotes from './components/management/KeepNotes';
 import AccountSettings from './components/management/AccountSettings';
-
+import Targets from './components/management/Targets';
+import Achievements from './components/management/Achievements';
+import { useEffect } from 'react';
+import {Modal,Ripple,Input,Select,Datepicker,Chart,initTE} from "tw-elements";
+      
 function App() {
+  window.addEventListener('scroll',()=>{
+    const isScroll = document.querySelector(".sidebar").classList.contains("hidden");
+    if(!isScroll){
+      openSidebar();
+    }
+  });
   const openSidebar = () => {
       document.querySelector(".sidebar").classList.toggle("hidden");
   }
+  useEffect(() => {
+    initTE({ Modal, Ripple, Input, Datepicker, Chart, Select });
+  }, []);
   return (
     <>
       <Router>
         <Header openSidebar={openSidebar}/>
         <Sidebar openSidebar={openSidebar}/>
+          <Routes>
+            <Route path='/' element={<TaskBoard/>}/>
+          </Routes>
           <Routes>
             <Route path='/task-settings' element={<TaskSettings/>}/>
           </Routes>
@@ -35,10 +51,13 @@ function App() {
             <Route path='/keep-notes' element={<KeepNotes/>}/>
           </Routes>
           <Routes>
-            <Route path='/account-settings' element={<AccountSettings/>}/>
+            <Route path='/targets' element={<Targets/>}/>
           </Routes>
           <Routes>
-            <Route path='/' element={<TaskBoard/>}/>
+            <Route path='/achievements' element={<Achievements/>}/>
+          </Routes>
+          <Routes>
+            <Route path='/account-settings' element={<AccountSettings/>}/>
           </Routes>
         <Footer/>
       </Router>
