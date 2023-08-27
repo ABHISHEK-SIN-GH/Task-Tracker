@@ -5,8 +5,8 @@ const Tbody = ({rows}) => {
     return (
         <>
             <tbody>
-                {rows.map((rowData)=>{
-                    return <Trow rowData={rowData}/>;
+                {rows.map((rowData,index)=>{
+                    return <Trow key={index} rowData={rowData}/>;
                 })}
             </tbody>
         </>

@@ -62,29 +62,13 @@ function App() {
         <Sidebar openSidebar={openSidebar}/>
           <Routes>
             <Route path='/' element={<TaskBoard/>}/>
-          </Routes>
-          <Routes>
             <Route path='/task-settings' element={<TaskSettings/>}/>
-          </Routes>
-          <Routes>
             <Route path='/track-tasks' element={<TrackTasks/>}/>
-          </Routes>
-          <Routes>
             <Route path='/time-table' element={<TimeTable/>}/>
-          </Routes>
-          <Routes>
             <Route path='/calender' element={<Calender/>}/>
-          </Routes>
-          <Routes>
             <Route path='/keep-notes' element={<KeepNotes/>}/>
-          </Routes>
-          <Routes>
             <Route path='/targets' element={<Targets/>}/>
-          </Routes>
-          <Routes>
             <Route path='/achievements' element={<Achievements/>}/>
-          </Routes>
-          <Routes>
             <Route path='/account-settings' element={<AccountSettings/>}/>
           </Routes>
         <Footer/>

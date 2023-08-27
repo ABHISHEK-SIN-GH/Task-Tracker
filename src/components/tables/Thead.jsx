@@ -5,8 +5,8 @@ const Thead = ({headings}) => {
         <>
             <thead className="border-b font-medium dark:border-neutral-500">
                 <tr>
-                    {headings.map((heading)=>{
-                        return <th scope="col" className="border-r px-6 py-4 dark:border-neutral-500">{heading}</th>;
+                    {headings.map((heading,index)=>{
+                        return <th scope="col" key={index} className="border-r px-6 py-4 dark:border-neutral-500">{heading}</th>;
                     })}
                 </tr>
             </thead>
