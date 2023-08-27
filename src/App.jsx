@@ -15,18 +15,46 @@ import { useEffect } from 'react';
 import {Modal,Ripple,Input,Select,Datepicker,Chart,initTE} from "tw-elements";
       
 function App() {
-  window.addEventListener('scroll',()=>{
-    const isScroll = document.querySelector(".sidebar").classList.contains("hidden");
-    if(!isScroll){
+
+  document.addEventListener('scroll',()=>{
+    const isCon = document.querySelector(".sidebar").classList.contains("hidden");
+    if(!isCon){
       openSidebar();
     }
   });
+
+  document.addEventListener("click", (e) => {
+    const sidebarInVisible = document.querySelector(".sidebar").classList.contains("hidden");
+    if(!sidebarInVisible){
+      const sidebar = document.getElementById("sidebar");
+      const sidebarItem = document.getElementsByClassName("sidebarItem");
+      const menu = document.getElementById("Menu");
+      let targetEl = e.target;
+      if(targetEl == menu){
+        return;
+      }
+      if(targetEl.classList.contains("sidebarItem")){
+        document.querySelector(".sidebar").classList.add("hidden");
+        return;
+      }
+      do {
+        if(targetEl == sidebar) {
+          return;
+        }
+        targetEl = targetEl.parentNode;
+      } while (targetEl);
+      document.querySelector(".sidebar").classList.add("hidden");
+    }
+  });
+
   const openSidebar = () => {
       document.querySelector(".sidebar").classList.toggle("hidden");
   }
+
   useEffect(() => {
     initTE({ Modal, Ripple, Input, Datepicker, Chart, Select });
   }, []);
+
   return (
     <>
       <Router>
