@@ -1,10 +1,13 @@
 import React from 'react';
+import Head1 from "../headings/Head1";
 
 const AccountSettings = () => {
     return (
-        <div>
-            Account Settings
-        </div>
+        <>
+            <div className="md:mx-7 p-4">
+                <Head1 heading={"Account Settings"}/>
+            </div>
+        </>
     );
 }
 

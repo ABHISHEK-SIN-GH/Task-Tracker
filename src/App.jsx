@@ -11,6 +11,8 @@ import KeepNotes from './components/management/KeepNotes';
 import AccountSettings from './components/management/AccountSettings';
 import Targets from './components/management/Targets';
 import Achievements from './components/management/Achievements';
+import FormModal from "./components/modals/FormModal";
+import AddTaskForm from "./components/Forms/AddTaskForm";
 import { useEffect } from 'react';
 import {Modal,Ripple,Input,Select,Datepicker,Chart,initTE} from "tw-elements";
       
@@ -55,11 +57,16 @@ function App() {
     initTE({ Modal, Ripple, Input, Datepicker, Chart, Select });
   }, []);
 
+  const action = () => {
+    console.log("called action from task board");
+  };
+
   return (
     <>
       <Router>
         <Header openSidebar={openSidebar}/>
         <Sidebar openSidebar={openSidebar}/>
+        <FormModal name={"Add Task"} targetID={"AddTaskForm"} form={<AddTaskForm/>} action={action} button={"Save Task"}/>
           <Routes>
             <Route path='/' element={<TaskBoard/>}/>
             <Route path='/task-settings' element={<TaskSettings/>}/>

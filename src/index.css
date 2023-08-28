@@ -9,3 +9,11 @@ body{
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+#table::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+}  
+#table{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
