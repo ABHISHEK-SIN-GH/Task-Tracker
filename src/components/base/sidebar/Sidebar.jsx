@@ -16,7 +16,7 @@ const Sidebar = ({openSidebar}) => {
                     {/* <SidebarItem name={"Task Settings"} icon={<i className="fa fa-sliders"></i>} link={"/task-settings"}/> */}
                     <SidebarItem name={"Keep Notes"} icon={<i className="fa fa-pencil-square-o"></i>}  link={"/keep-notes"}/>
                     <SidebarItem name={"Achievements"} icon={<i className="fa fa-trophy"></i>} link={"/achievements"}/>
-                    <SidebarItem name={"Account Settings"} icon={<i className="fa fa-cogs"></i>} link={"/account-settings"}/>
+                    {/* <SidebarItem name={"Account Settings"} icon={<i className="fa fa-cogs"></i>} link={"/account-settings"}/> */}
                 </div>
             </div>
         </div>

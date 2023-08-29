@@ -16,7 +16,7 @@ const Achievements = () => {
     return (
         <>
             <div className="md:mx-7 p-4">
-              <div className="flex flex-row items-center justify-between">
+                <div className="flex flex-row items-center justify-between">
                     <Head1 heading={"List Your Achievements"}/>
                     <ModalOutlineButton name={"Add Achievement"} size={"text-base"} color={"primary"} targetID={"AddAchievementForm"}/>
                 </div>
