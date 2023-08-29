@@ -5,7 +5,7 @@ import Head1 from "../headings/Head1";
 
 const TaskBoard = () => {
   
-  const headings = ["SNo.","Task","Category","Priority","Status","Due Date","Action"];
+  const headings = ["SNo.","Task","Category","Priority","Status","Due Date"];
   const rows = [
     [1,"Task-1","Category-4","Priority-1","Status","Due Date 1"],
     [1,"Task-1","Category-4","Priority-1","Status","Due Date 1"],
