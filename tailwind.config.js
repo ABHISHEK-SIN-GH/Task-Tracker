@@ -14,6 +14,6 @@ export default {
       },
     },
   },
-  darkMode: "class",
-  plugins: []
+  plugins: [import("tw-elements/dist/plugin.cjs")],
+  darkMode: "class"
 }

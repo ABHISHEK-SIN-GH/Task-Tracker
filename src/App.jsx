@@ -13,11 +13,10 @@ import Targets from './components/management/Targets';
 import Achievements from './components/management/Achievements';
 import FormModal from "./components/modals/FormModal";
 import AddTaskForm from "./components/Forms/AddTaskForm";
-import { useEffect } from 'react';
+import { useEffect} from 'react';
 import {Modal,Ripple,Input,Select,Datepicker,Chart,initTE} from "tw-elements";
       
 function App() {
-
   document.addEventListener('scroll',()=>{
     const isCon = document.querySelector(".sidebar").classList.contains("hidden");
     if(!isCon){
@@ -54,7 +53,7 @@ function App() {
   }
 
   useEffect(() => {
-    initTE({ Modal, Ripple, Input, Datepicker, Chart, Select });
+    initTE({ Modal, Ripple, Input, Datepicker, Chart, Select },true);
   }, []);
 
   const action = () => {
