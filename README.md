@@ -2,11 +2,15 @@
 
 Task Tracker is a powerful task management application that helps you stay organized and productive. This app allows you to create, manage, and track your daily tasks. Additionally, it offers insightful tracking features, enabling you to monitor your task completion trends on a daily, weekly, and monthly basis.
 
-![5](https://github.com/ABHISHEK-SIN-GH/Task-Tracker/assets/66122148/27f0daaf-49b8-4010-963d-ce7dd9c950d5)
-![4](https://github.com/ABHISHEK-SIN-GH/Task-Tracker/assets/66122148/9707699f-911b-419c-aa13-4919e0bc0aa8)
-![3](https://github.com/ABHISHEK-SIN-GH/Task-Tracker/assets/66122148/cb48fec2-fea7-4616-ac1e-c4ea72f056a6)
-![2](https://github.com/ABHISHEK-SIN-GH/Task-Tracker/assets/66122148/169c5b97-9010-4d37-9679-6e9a6bb1bb14)
 ![1](https://github.com/ABHISHEK-SIN-GH/Task-Tracker/assets/66122148/64d35e90-4582-4290-a391-7dba3ce8b05b)
+
+![2](https://github.com/ABHISHEK-SIN-GH/Task-Tracker/assets/66122148/169c5b97-9010-4d37-9679-6e9a6bb1bb14)
+
+![3](https://github.com/ABHISHEK-SIN-GH/Task-Tracker/assets/66122148/cb48fec2-fea7-4616-ac1e-c4ea72f056a6)
+
+![4](https://github.com/ABHISHEK-SIN-GH/Task-Tracker/assets/66122148/9707699f-911b-419c-aa13-4919e0bc0aa8)
+
+![5](https://github.com/ABHISHEK-SIN-GH/Task-Tracker/assets/66122148/27f0daaf-49b8-4010-963d-ce7dd9c950d5)
 
 ## Features
 
